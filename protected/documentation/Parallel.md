@@ -123,3 +123,33 @@ abort(future)
 ```
 
 If you pass in no arguments, it will abort the current script in its entirety.
+
+## Until
+
+You can wait until a certain condition occurs:
+
+```python
+# Take a timestamp in the near future
+a = date() + "10 seconds"
+
+# We want to wait until that time is past
+# We want to check every second to see if it has indeed passed
+future = until(lambda(date() > a), interval: 1000)
+
+# Wait for it to pass
+wait(future)
+```
+
+You can set a maximum timeout on the until to make sure the system does not run forever:
+
+```python
+# Take a timestamp in the near future
+a = date() + "10 seconds"
+
+# We want to wait until that time is past
+# We want to check every second to see if it has indeed passed
+future = until(lambda(date() > a), interval: 1000, timeout: 5000)
+
+# It will fail halfway through the wait because we want to wait 10 seconds but limit the timeout to 5 seconds
+wait(future)
+```

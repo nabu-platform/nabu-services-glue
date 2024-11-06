@@ -1,0 +1,2 @@
+# forces glue to load all its libraries in a single threaded environment
+console("Glue startup service run")

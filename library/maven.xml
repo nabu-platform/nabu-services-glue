@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><maven><artifacts>nabu:eai-module-glue</artifacts><internalDomains>nabu</internalDomains><updateSnapshots>false</updateSnapshots></maven>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<maven>
+	<artifacts>nabu:eai-module-glue</artifacts>
+	<internalDomains>nabu</internalDomains>
+	<updateSnapshots>false</updateSnapshots>
+	<provided>javax.xml.bind:jaxb-api</provided>
+	<provided>com.sun.xml.bind:jaxb-impl</provided>
+	<provided>com.sun.xml.bind:jaxb-core</provided>
+	<provided>javax.activation:activation</provided>
+</maven>

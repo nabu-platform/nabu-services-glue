@@ -18,5 +18,9 @@
 			<groupId>nabu.misc</groupId>
 			<artifactId>startup</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>nabu.types</groupId>
+			<artifactId>structure</artifactId>
+		</dependency>
 	</dependencies>
 </project>
